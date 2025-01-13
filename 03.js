@@ -12,7 +12,30 @@
  * @param {string} newTitle
  * @returns {Array} 새로운 todos 배열
  */
-function updateTodoTitle(todos, id, newTitle) {}
+
+const todos = [
+  { id: 1, title: "청소하기", completed: false },
+  { id: 2, title: "운동하기", completed: false },
+];
+
+function updateTodoTitle(todos, id, newTitle) {
+  // 1) 해당 id를 가진 todo의 title을 찾아서 새로운 title로 업데이트하세요.
+  return todos.map((item)=>{
+
+    // return item.id === id ? {...todos, title : newTitle} = newTitle : item
+    // if(item.id === id){
+    //   item.title = newTitle;
+    // }
+    // return item
+
+  })
+  // 2) 업데이트된 새로운 todos 배열을 반드시 반환해야 합니다.
+
+  // 3) 해당 id가 존재하지 않으면 기존 배열을 그대로 반환하세요.
+}
+
+
+updateTodoTitle(todos, 1, "청소 완료")
 
 // export 수정 불가
 export { updateTodoTitle };
